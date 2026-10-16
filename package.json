@@ -1,0 +1,23 @@
+{
+  "type": "module",
+  "name": "tec-api",
+  "version": "1.0.0",
+  "description": "api utilizando node e express",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adelaeesquivel-prog/tec-api.git"
+  },
+  "author": "adela",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adelaeesquivel-prog/tec-api/issues"
+  },
+  "homepage": "https://github.com/adelaeesquivel-prog/tec-api#readme",
+  "dependencies": {
+    "express": "^5.3.0"
+  }
+}
