@@ -1,6 +1,6 @@
 //importando o express (instalando via terminal)
 import express from 'express';
-import {ler, inserir, lerUm} from './src/aluno.js';
+import {ler, inserir, lerUm, atualizar, excluir} from './src/aluno.js';
 
 const app = express();
 const porta = 3000;
@@ -47,15 +47,21 @@ app.put('/alunos/:id',(req, res) => {
 });
  
  
-// Endpoint para ATUALIZAR ALGUNS OS DADOS de UM ALUNO
+//PATCH: Endpoint para ATUALIZAR todos/ALGUNS  DADOS de UM ALUNO
  app.patch('/alunos/:id',(req, res) => {
-    res.send('Atualizando alguns dados de um aluno');
+     //res.send('Atualizando alguns dados de um aluno');
+      const id = parseInt(req.params.id);
+      const aluno = req.body;
+      atualizar(id, aluno, res);
+ 
 });
  
  
 // Endpoint para DELETAR UM ALUNO
  app.delete('/alunos/:id',(req, res) => {
-    res.send('Deletar os  dados de um aluno');
+   // res.send('Deletar os  dados de um aluno');
+   const id = parseInt(req.params.id);
+   excluir(id, res);
 });
  
 
