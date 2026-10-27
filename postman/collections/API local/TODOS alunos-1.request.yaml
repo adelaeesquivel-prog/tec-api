@@ -1,0 +1,5 @@
+$kind: http-request
+name: TODOS alunos
+url: localhost:3000/alunos
+method: GET
+order: 1000
