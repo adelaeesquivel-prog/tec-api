@@ -19,7 +19,8 @@ app.use(cors());
 /*ROTAS */
 //Configuirando rota para o inicio da aplicação
 app.get('/', function(req, res){
-    res.send('API de alunos com nodeJS, express e MySQLn');
+    //res.send('API de alunos com nodeJS, express e MySQLn');
+    res.redirect()
 });
 
 //Rota para visualizar TODOS os alunos
